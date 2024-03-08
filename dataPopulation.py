@@ -8,6 +8,10 @@ cursor = conn.cursor()
 def add_data(table_name, data):
     for question, answer in data:
         cursor.execute(f'''INSERT INTO {table_name} (question, answer) VALUES (?, ?)''', (question, answer))
+        conn.commit()
+        print("data added")
+
+
 
 # Generate questions and answers for each category
 business_ethics_data = [
@@ -20,7 +24,7 @@ business_ethics_data = [
     ("Why is ethical leadership important in business?", "Ethical leadership is important in business because it sets a positive example for employees, builds trust with stakeholders, and contributes to long-term organizational success."),
     ("Discuss the relationship between ethics and corporate culture.", "Ethics and corporate culture are closely linked, as corporate culture influences the ethical behavior of employees and leaders, and ethical behavior contributes to the development of a positive corporate culture."),
     ("What role does ethics play in decision-making?", "Ethics plays a crucial role in decision-making by guiding individuals and organizations to make choices that are morally acceptable and aligned with their values and principles."),
-    ("How can businesses promote ethical behavior among employees?", "Businesses can promote ethical behavior among employees by establishing clear ethical standards, providing ethics training and education, rewarding ethical behavior, and fostering a culture of integrity and transparency.")
+    ("How can businesses promote ethical behavior among eamployees?", "Businesses can promote ethical behavior among employees by establishing clear ethical standards, providing ethics training and education, rewarding ethical behavior, and fostering a culture of integrity and transparency.")
 ]
 
 business_data_mgmt_data = [
@@ -40,7 +44,7 @@ business_communication_data = [
     ("What is business communication?", "Business communication refers to the exchange of information within and outside an organization to achieve business objectives."),
     ("What are the key elements of effective communication?", "The key elements of effective communication include clarity, conciseness, credibility, completeness, and consideration for the audience."),
     ("Discuss the importance of active listening in business communication.", "Active listening is important in business communication because it helps individuals understand others' perspectives, build rapport, and resolve conflicts."),
-    ("What are the different channels of business communication?", "The different channels of business communication include face-to-face meetings, email, phone calls, video conferencing, and written documents."),
+    ("Whata are the different channels of business communication?", "The different channels of business communication include face-to-face meetings, email, phone calls, video conferencing, and written documents."),
     ("Explain the concept of nonverbal communication.", "Nonverbal communication involves conveying messages without words through gestures, facial expressions, body language, and tone of voice."),
     ("How can businesses overcome communication barriers?", "Businesses can overcome communication barriers by promoting open communication, providing training in communication skills, using multiple communication channels, and seeking feedback from employees."),
     ("Discuss the role of communication technology in business.", "Communication technology such as email, instant messaging, and collaboration tools facilitates faster and more efficient communication, enabling organizations to collaborate across geographic locations and time zones."),
@@ -60,3 +64,4 @@ principles_of_macro_data = [
      
      
 ]
+add_data("Business_Ethics",business_ethics_data)
