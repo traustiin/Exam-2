@@ -47,21 +47,34 @@ def play_quiz_bowl():
     while True:
         display_menu()
         choice = input("Enter the number of the category you want to play (or '6' to exit): ")
+        #if choice == 1:
+            #open the Ethics table
+            #display question
+            #allow for input
+            #test input
+            #give feedback
+        ("SELECT * FROM Business Ethics")
+
+
+            
+
+
 
         if choice == '6':
             print("Exiting the Quiz Bowl.")
             break
-        
-        try:
+        if choice == "1":
+            selected_table = 'Business_Ethics'
+        """try:
             choice = int(choice)
             if choice < 1 or choice > 5:
                 print("Invalid choice. Please enter a number between 1 and 5.")
                 continue
         except ValueError:
             print("Invalid input. Please enter a number.")
-            continue
+            continue"""
 
-        selected_table = get_table_names()[choice - 1]
+        #selected_table = get_table_names()[choice]
         display_questions(selected_table)
 
 # Main function
