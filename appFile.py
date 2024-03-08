@@ -15,7 +15,7 @@ def get_random_question(table_name):
 # Function to play the Quiz Bowl
 def play_quiz_bowl():
     print("Welcome to Quiz Bowl!")
-    
+
     print("Choose a category:")
     table_names = get_table_names()
     for index, name in enumerate(table_names, 1):
