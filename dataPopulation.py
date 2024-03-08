@@ -5,11 +5,46 @@ conn = sqlite3.connect('quiz_bowl.db')
 cursor = conn.cursor()
 
 # Define a function to add data to a table
-def add_data(table_name, data):
-    for question, answer in data:
-        cursor.execute(f'''INSERT INTO {table_name} (question, answer) VALUES (?, ?)''', (question, answer))
+#don't run again
+def add_data_BEthics(question,answer):
+        cursor.execute(f'''INSERT INTO Business_Ethics (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
+        add_data_BEthics("What is the definition of business ethics?","Moral principles that guide you in the business world")
+
+def add_data_bmgt(question,answer):
+        cursor.execute(f'''INSERT INTO Business_Data_MGMT (question, answer) VALUES (?, ?)''', (question, answer))
+        conn.commit()
+        print("data added")
+        add_data_bmgt("Question typed here","Answer right here")
+
+def add_data_BCommunication(question,answer):
+        cursor.execute(f'''INSERT INTO Business_Communication (question, answer) VALUES (?, ?)''', (question, answer))
+        conn.commit()
+        print("data added")
+        add_data_BCommunication("Question typed here","Answer right here")
+
+def add_data_PrincOfMacro(question,answer):
+        cursor.execute(f'''INSERT INTO Principles_of_Macro (question, answer) VALUES (?, ?)''', (question, answer))
+        conn.commit()
+        print("data added")
+        add_data_PrincOfMacro("Question typed here","Answer right here")
+
+def add_data_AppDevelop(question,answer):
+        cursor.execute(f'''INSERT INTO Business_App_Development (question, answer) VALUES (?, ?)''', (question, answer))
+        conn.commit()
+        print("data added")
+        add_data_AppDevelop("Question typed here","Answer right here")
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,4 +99,3 @@ principles_of_macro_data = [
      
      
 ]
-add_data("Business_Ethics",business_ethics_data)
