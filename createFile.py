@@ -5,7 +5,7 @@ conn = sqlite3.connect('quiz_bowl.db')
 cursor = conn.cursor()
 
 # Create tables for each category of questions
-categories = ['Strategic Management', 'Digital Marketing', 'Personal Sales', 'Information Systems', 'Finance']
+categories = ['Business Ethics', 'Business Data MGMT', 'Business Communication', 'Principles of Macro', 'Business App Development']
 
 for category in categories:
     cursor.execute(f'''CREATE TABLE IF NOT EXISTS {category.replace(" ", "_")} (
