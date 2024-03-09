@@ -9,6 +9,7 @@ def add_data_BEthics(question,answer):
         cursor.execute(f'''INSERT INTO Business_Ethics (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
+
         add_data_BEthics("What is the definition of business ethics?","B) Moral principles that guide you in the business world","B")
         add_data_BEthics("An open, peaceful violation of a law to protect its alleged injustice is? ","A) Morality Disobedience B) Civil Disobedinece C) Ethic Violation","B")
         add_data_BEthics("Personal human liberties that are guaranteed by the US Constitution is?","A) Human Rights B) Civil Rights C) Common rights","B")
@@ -24,6 +25,7 @@ def add_data_bmgt(question,answer):
         cursor.execute(f'''INSERT INTO Business_Data_MGMT (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
+
         add_data_bmgt("What is the full form of DBMS?","A) Data of Binary Management System B) Database Management System C) Database Management Service","B")
         add_data_bmgt("What is a database?","A) Organized collection of data that cannot be updated B) Organized collection of data or information that can be accessed, updated, and managed C) Collection of data or information without organizing","B")
         add_data_bmgt("What is DBMS?","A) A collection of queries B) DBMS stores, modifies, and retrieves data C) DBMS is a programming language","B")
@@ -39,6 +41,7 @@ def add_data_BCommunication(question,answer):
         cursor.execute(f'''INSERT INTO Business_Communication (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
+
         add_data_BCommunication("The term communis derived from ___ word","A) Greek B) Latin C) Chinese","B")
         add_data_BCommunication("Communication means ___ information, feeling and thoughts, with others","A) To recieve B) Exchange of C) Conveying","B")
         add_data_BCommunication("Grapevine communication is associated with ___ communication","A) Formal B) Informal C) Horizontal","B")
@@ -54,6 +57,7 @@ def add_data_PrincOfMacro(question,answer):
         cursor.execute(f'''INSERT INTO Principles_of_Macro (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
+        
         add_data_PrincOfMacro("A given increase in government spending is more effective at increasing output in a country that __","A) A decrease in interest rate B) A decrease in the level of output C) No change","B")
         add_data_PrincOfMacro("In the short run, under a flexable exchange rate, an expansionary monetary policy ___","A) Has an ambiguous effect on investment B) Has an ambiguous effect on net exports C) Has an ambiguous effect on the interest rate","B")
         add_data_PrincOfMacro("In the short run, under a flexible exchange rate, an expansionary fiscal policy ___","A) Has a negative effect on investment B) Has a negative effect on net exports C) Has a positive effect on investment","B")
@@ -69,6 +73,7 @@ def add_data_AppDevelop(question,answer):
         cursor.execute(f'''INSERT INTO Business_App_Development (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
+
         add_data_AppDevelop("Name of the screen that recognizes touch input is?","A) Digital screen B) Touch screen C) Point screen","B")
         add_data_AppDevelop("Which of these stores more data than a DVD?","A) CD Rom B) Blue Ray disk C) Floppy disk","B")
         add_data_AppDevelop("What do functions do?","A) Functions manipulate data within a program B) Functions define a set of instructions to perform a specific task C) Functions create graphical interfaces for user interaction","B")
