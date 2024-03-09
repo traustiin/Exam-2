@@ -63,7 +63,7 @@ def add_data_PrincOfMacro(question,answer):
         add_data_PrincOfMacro("To decrease the trade deficit and to increase short-run output, which of the following could work?","A) Contractionary monetary policy B) A depreciation of the dollar C) Adoption of a fixed exchange rate","B")
         add_data_PrincOfMacro("A nation's standard of living is","A) Real GDP B) Real GDP per person C) Nominal GDP","B")
         add_data_PrincOfMacro("Profits that are reinvested in a frim rather than paid to the firm's owners are called?","A) Dividends B) Retained earnings C) Stock options","B")
-        add_data_PrincOfMacro("If nominal GDP exceeds real GDP for a specific year, then teh GDP deflator must be___","A) Equal to 100 B) Greater than 100 C) Less than 100","B")
+        add_data_PrincOfMacro("If nominal GDP exceeds real GDP for a specific year, then the GDP deflator must be___","A) Equal to 100 B) Greater than 100 C) Less than 100","B")
 
 def add_data_AppDevelop(question,answer):
         cursor.execute(f'''INSERT INTO Business_App_Development (question, answer) VALUES (?, ?)''', (question, answer))
