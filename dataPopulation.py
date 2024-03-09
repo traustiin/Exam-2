@@ -10,92 +10,73 @@ def add_data_BEthics(question,answer):
         cursor.execute(f'''INSERT INTO Business_Ethics (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
-        add_data_BEthics("What is the definition of business ethics?","Moral principles that guide you in the business world")
+        add_data_BEthics("What is the definition of business ethics?","B) Moral principles that guide you in the business world","B")
+        add_data_BEthics("An open, peaceful violation of a law to protect its alleged injustice is? ","A) Morality Disobedience B) Civil Disobedinece C) Ethic Violation","B")
+        add_data_BEthics("Personal human liberties that are guaranteed by the US Constitution is?","A) Human Rights B) Civil Rights C) Common rights","B")
+        add_data_BEthics("Determining what is right or wrong action in a reasoned and impartial manner is?","A) Morality B) Ethics C) Integrity","B")
+        add_data_BEthics("Making decisions that treat everyone the same.","A) Partial B) Impartiality C) Ethics","B")
+        add_data_BEthics("The capacity to do what is right even when tempted to do otherwise","A) Temptation B) Integrity C) Morality","B")
+        add_data_BEthics("Business ethics are the ethical principles used in making good business decisions.","A) True B) False","B")
+        add_data_BEthics("An organization's financial statement containing untrue data which is used to mislead is known as?","A) A bankruptcy discharge B) A false financial statement C) A bank statement fee","B")
+        add_data_BEthics("An entrusted person who converts other's assets or property for his or her own use is an?","A) Identity theif B) Embezzler C) Fee schemer","B")
+        add_data_BEthics("All parties which interact with a business are known as?","A) Shareholders B) Stakeholders C) Customers","B")
 
 def add_data_bmgt(question,answer):
         cursor.execute(f'''INSERT INTO Business_Data_MGMT (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
-        add_data_bmgt("Question typed here","Answer right here")
+        add_data_bmgt("What is the full form of DBMS?","A) Data of Binary Management System B) Database Management System C) Database Management Service","B")
+        add_data_bmgt("What is a database?","A) Organized collection of data that cannot be updated B) Organized collection of data or information that can be accessed, updated, and managed C) Collection of data or information without organizing","B")
+        add_data_bmgt("What is DBMS?","A) A collection of queries B) DBMS stores, modifies, and retrieves data C) DBMS is a programming language","B")
+        add_data_bmgt("Who created the first DBMS?","A) Edgar Frank Codd B) Charles Bachman C) Charles Babbage","B")
+        add_data_bmgt("Which type of data can be stored in the database?","A) Image oriented data B) All of the above C) Text, files containing data","B")
+        add_data_bmgt("In which of the following formats data is stored in the DBMS?","A) Image B) Table C) Graph","B")
+        add_data_bmgt("Which of the following is not a type of database?","Hierarchical B) Decentralized C) Network","B")
+        add_data_bmgt("Which of the following is not an example of DBMS?","A) MySQL B) Google C) Microsoft Access","B")
+        add_data_bmgt("Which of the following is not a feature of DBMS?","A) High level of security B) Single-user access only C) Support ACID Property","B")
+        add_data_bmgt("Which of the following is a feature of the database?","A) Lack of authentication B) User interface provided C) Store data in multiple locations","B")
 
 def add_data_BCommunication(question,answer):
         cursor.execute(f'''INSERT INTO Business_Communication (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
-        add_data_BCommunication("Question typed here","Answer right here")
+        add_data_BCommunication("The term communis derived from ___ word","A) Greek B) Latin C) Chinese","B")
+        add_data_BCommunication("Communication means ___ information, feeling and thoughts, with others","A) To recieve B) Exchange of C) Conveying","B")
+        add_data_BCommunication("Grapevine communication is associated with ___ communication","A) Formal B) Informal C) Horizontal","B")
+        add_data_BCommunication("Lateral communication is between","A) Superior and subordinate B) Same cadre of personal C) Among all","B")
+        add_data_BCommunication("Audio visual communicationis","A) Written B) Both auditory & visual C) Visual only","B")
+        add_data_BCommunication("Communication problems otherwise known as","A) Enquire B) Barriers C) Encoding","B")
+        add_data_BCommunication("Posters fall under ___ communication","A) Oral B) Visual C) Written","B")
+        add_data_BCommunication("Informal communication is otherwise known as ___ communication","A) Lateral B) Grapevine C) Visual","B")
+        add_data_BCommunication("Horizontal communication flows through","A) Telephonic talk B) All of the above C) Periodical meeting","B")
+        add_data_BCommunication("Gestural communication is a ___","A) Direct conversation B) Non-verbal message C) Oral communication","B")
 
 def add_data_PrincOfMacro(question,answer):
         cursor.execute(f'''INSERT INTO Principles_of_Macro (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
-        add_data_PrincOfMacro("Question typed here","Answer right here")
+        add_data_PrincOfMacro("A given increase in government spending is more effective at increasing output in a country that __","A) A decrease in interest rate B) A decrease in the level of output C) No change","B")
+        add_data_PrincOfMacro("In the short run, under a flexable exchange rate, an expansionary monetary policy ___","A) Has an ambiguous effect on investment B) Has an ambiguous effect on net exports C) Has an ambiguous effect on the interest rate","B")
+        add_data_PrincOfMacro("In the short run, under a flexible exchange rate, an expansionary fiscal policy ___","A) Has a negative effect on investment B) Has a negative effect on net exports C) Has a positive effect on investment","B")
+        add_data_PrincOfMacro("A country with a fixed exchange rate ___","A) Must open its capital market B) Gives up control of its monetary policy if it maintains open capital markets C) Must give up control of its monetary policy","B")
+        add_data_PrincOfMacro("Higher government spending will not crowd out investment in___","A) A closed economy B) An open economy with fixed exchange rates C) An open economy with fixed exchange rates","B")
+        add_data_PrincOfMacro("A country will be expected to have a larger trade volume to GDP if___","A) Europe's economies have inflexible labor markets B) Europe's economies are already highly dependent on trade with each other C) Europe's economies are subject to uncorrelated shocks","B")
+        add_data_PrincOfMacro("To decrease the trade deficit and to increase short-run output, which of the following could work?","A) Contractionary monetary policy B) A depreciation of the dollar C) Adoption of a fixed exchange rate","B")
+        add_data_PrincOfMacro("A nation's standard of living is","A) Real GDP B) Real GDP per person C) Nominal GDP","B")
+        add_data_PrincOfMacro("Profits that are reinvested in a frim rather than paid to the firm's owners are called?","A) Dividends B) Retained earnings C) Stock options","B")
+        add_data_PrincOfMacro("If nominal GDP exceeds real GDP for a specific year, then teh GDP deflator must be___","A) Equal to 100 B) Greater than 100 C) Less than 100","B")
 
 def add_data_AppDevelop(question,answer):
         cursor.execute(f'''INSERT INTO Business_App_Development (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
         print("data added")
-        add_data_AppDevelop("Question typed here","Answer right here")
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Generate questions and answers for each category
-business_ethics_data = [
-    ("What is the definition of business ethics?", "Business ethics refers to the moral principles that guide the conduct of individuals and organizations in the business world."),
-    ("Give an example of an ethical dilemma in business.", "An example of an ethical dilemma in business is deciding whether to prioritize profits over environmental sustainability."),
-    ("What is corporate social responsibility (CSR)?", "Corporate social responsibility (CSR) is the practice of companies operating in a socially responsible manner by considering the interests of society in their operations and interactions with stakeholders."),
-    ("Explain the concept of whistleblowing.", "Whistleblowing is the act of reporting unethical or illegal behavior within an organization to authorities or the public."),
-    ("What are the key components of a code of ethics?", "The key components of a code of ethics include integrity, honesty, accountability, fairness, and respect for others."),
-    ("What is the difference between ethics and compliance?", "Ethics refers to the moral principles that guide behavior, while compliance involves adhering to laws, regulations, and policies."),
-    ("Why is ethical leadership important in business?", "Ethical leadership is important in business because it sets a positive example for employees, builds trust with stakeholders, and contributes to long-term organizational success."),
-    ("Discuss the relationship between ethics and corporate culture.", "Ethics and corporate culture are closely linked, as corporate culture influences the ethical behavior of employees and leaders, and ethical behavior contributes to the development of a positive corporate culture."),
-    ("What role does ethics play in decision-making?", "Ethics plays a crucial role in decision-making by guiding individuals and organizations to make choices that are morally acceptable and aligned with their values and principles."),
-    ("How can businesses promote ethical behavior among eamployees?", "Businesses can promote ethical behavior among employees by establishing clear ethical standards, providing ethics training and education, rewarding ethical behavior, and fostering a culture of integrity and transparency.")
-]
-
-business_data_mgmt_data = [
-    ("What is data management?", "Data management refers to the process of collecting, storing, organizing, and analyzing data to support business operations and decision-making."),
-    ("Explain the importance of data quality.", "Data quality is important because accurate and reliable data is essential for making informed decisions, ensuring regulatory compliance, and improving business performance."),
-    ("What are the key components of a data management strategy?", "The key components of a data management strategy include data governance, data architecture, data integration, data security, and data quality management."),
-    ("What is a data warehouse?", "A data warehouse is a centralized repository that stores structured and unstructured data from multiple sources for reporting and analysis purposes."),
-    ("What is the difference between data warehousing and data mining?", "Data warehousing involves storing and organizing data for analysis, while data mining involves discovering patterns and insights from large datasets."),
-    ("What is master data management (MDM)?", "Master data management (MDM) is a process that ensures the consistency and accuracy of critical data across an organization's systems and applications."),
-    ("Discuss the role of data governance in data management.", "Data governance is the framework and processes for managing data assets and ensuring data quality, security, and compliance."),
-    ("Explain the concept of data integration.", "Data integration involves combining data from different sources to provide a unified view of information for analysis and decision-making."),
-    ("What are some common challenges in data management?", "Common challenges in data management include data quality issues, data silos, lack of data governance, security concerns, and compliance requirements."),
-    ("How can businesses benefit from effective data management?", "Businesses can benefit from effective data management by improving decision-making, enhancing operational efficiency, reducing costs, and gaining competitive advantage.")
-]
-
-business_communication_data = [
-    ("What is business communication?", "Business communication refers to the exchange of information within and outside an organization to achieve business objectives."),
-    ("What are the key elements of effective communication?", "The key elements of effective communication include clarity, conciseness, credibility, completeness, and consideration for the audience."),
-    ("Discuss the importance of active listening in business communication.", "Active listening is important in business communication because it helps individuals understand others' perspectives, build rapport, and resolve conflicts."),
-    ("Whata are the different channels of business communication?", "The different channels of business communication include face-to-face meetings, email, phone calls, video conferencing, and written documents."),
-    ("Explain the concept of nonverbal communication.", "Nonverbal communication involves conveying messages without words through gestures, facial expressions, body language, and tone of voice."),
-    ("How can businesses overcome communication barriers?", "Businesses can overcome communication barriers by promoting open communication, providing training in communication skills, using multiple communication channels, and seeking feedback from employees."),
-    ("Discuss the role of communication technology in business.", "Communication technology such as email, instant messaging, and collaboration tools facilitates faster and more efficient communication, enabling organizations to collaborate across geographic locations and time zones."),
-    ("What are the benefits of effective business communication?", "The benefits of effective business communication include improved productivity, enhanced teamwork, better decision-making, and increased customer satisfaction."),
-    ("What is the difference between formal and informal communication?", "Formal communication follows established protocols and channels within an organization, while informal communication occurs spontaneously and is more casual in nature."),
-    ("How can businesses ensure clarity in written communication?", "Businesses can ensure clarity in written communication by using simple and concise language, organizing information logically, and proofreading documents for errors.")
-]
-
-principles_of_macro_data = [
-    ("What is macroeconomics?", "Macroeconomics is the branch of economics that studies the behavior of the economy as a whole, including topics such as inflation, unemployment, economic growth, and monetary and fiscal policy."),
-    ("Explain the concept of gross domestic product (GDP).", "Gross domestic product (GDP) measures the total value of all goods and services produced within a country's borders in a specific period."),
-    ("Discuss the relationship between inflation and unemployment.", "The Phillips curve illustrates the inverse relationship between inflation and unemployment, suggesting that when inflation is low, unemployment tends to be high, and vice versa."),
-    ("What is monetary policy?", "Monetary policy refers to the actions taken by a central bank to control the money supply and interest rates to achieve economic goals such as price stability and full employment."),
-    ("Explain the concept of fiscal policy.", "Fiscal policy involves the use of government spending and taxation to influence the economy, with the aim of achieving economic goals such as stabilizing economic growth and reducing unemployment."),
-    ("Discuss the role of the Federal Reserve in the U.S. economy.", "The Federal Reserve, often referred to as the Fed, is the central bank of the United States, responsible for conducting monetary policy, supervising and regulating banks, and maintaining financial stability."),
-    ("What is the difference between classical and Keynesian economics?", "Classical economics emphasizes the importance of free markets and limited government intervention, while Keynes.")
-     
-     
-]
+        add_data_AppDevelop("Name of the screen that recognizes touch input is?","A) Digital screen B) Touch screen C) Point screen","B")
+        add_data_AppDevelop("Which of these stores more data than a DVD?","A) CD Rom B) Blue Ray disk C) Floppy disk","B")
+        add_data_AppDevelop("What do functions do?","A) Functions manipulate data within a program B) Functions define a set of instructions to perform a specific task C) Functions create graphical interfaces for user interaction","B")
+        add_data_AppDevelop("What are booleans?","A) Booleans are data types used to represent numeric values B) Booleans are data types that represent true or false values C) Booleans are used to perform arithmetic operations in programming","B")
+        add_data_AppDevelop("What is the primary purpose of a while loop in progamming?","A) To execute a block of code a specific number of times B) To repeat a block of code until a certain condition is no longer true C) To perform mathmatical calculations efficiently","B")
+        add_data_AppDevelop("What does sequencing refer to in programming?","A) Organizing data into structured formats like arrays and lists B) Arranging code statements in a specific order to execute tasks step by step C) Determining the flow of control within conditional statements","B")
+        add_data_AppDevelop("What is the primary purpose of dictionaries in programming?","A) Storing and organizing data in a sequential manner B) Mapping keys to corresponding values for efficient retrieval C) Performing mathmatical operations on numeric datasets","B")
+        add_data_AppDevelop("What is the main function of a for loop in programming?","A) To execute a block of code repeatedly until a certain condition is met B) To iterate over a sequence and perform an action on each item C) To define a set of instructions to perform a task","B")
+        add_data_AppDevelop("What is the primary goal of prompt engineering?","A) To design user-friendly interfaces for software applications B) To create clear instructions for achieving desired outcomes C) To optomize the efficiency of algorithms and data structures","B")
+        add_data_AppDevelop("What is the primary purpose of defining functions?","A) To execute a block of code repreatedly until a certain condition is met B) To organize code into reuseable modules for easier readability C) To perfom mathmatical calculations on numeric datasets","B")
