@@ -5,7 +5,6 @@ conn = sqlite3.connect('quiz_bowl.db')
 cursor = conn.cursor()
 
 # Define a function to add data to a table
-#don't run again
 def add_data_BEthics(question,answer):
         cursor.execute(f'''INSERT INTO Business_Ethics (question, answer) VALUES (?, ?)''', (question, answer))
         conn.commit()
